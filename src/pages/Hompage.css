@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Roboto:wght@400;700;900&display=swap");
+/*-- container --*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/*-- container --*/
+.header-nav {
+  padding: 20px 0;
+}
+
+.header-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.header-nav .navbar-nav .nav-link {
+  background: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  line-height: 26px;
+  padding: 0 15px;
+}
+
+.header-nav .dropdown-item {
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  line-height: 26px;
+  padding: 5px 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header-nav .dropdown-item:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.header-nav a.dropdown-item.active {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.header-nav .navbar-light a.navbar-brand {
+  color: #f57b51;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -1px;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 10px;
+  margin: 0;
+}
+
+.header-nav button .navbar-toggler .icon-close {
+  display: block;
+}
+
+.header-nav button .navbar-toggler .icon-expand {
+  display: none;
+}
+
+.header-nav button .navbar-toggler .collapsed .icon-close {
+  display: none;
+}
+
+.header-nav button .navbar-toggler .collapsed .icon-expand {
+  display: block;
+}
+
+.header-nav button.navbar-toggler .icon-close {
+  display: block;
+}
+
+.header-nav button.navbar-toggler .icon-expand {
+  display: none;
+}
+
+.header-nav button.navbar-toggler.collapsed .icon-close {
+  display: none;
+}
+
+.header-nav button.navbar-toggler.collapsed .icon-expand {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .header-nav .navbar-nav .nav-link {
+    padding: 5px 15px;
+  }
+  .header-nav .dropdown-menu {
+    margin: 5px 15px;
+  }
+  .header-nav .navbar-light .navbar-toggler {
+    border-color: transparent;
+    outline: none;
+    padding: 0;
+  }
+  .header-nav .navbar-light .navbar-toggler span.fa {
+    font-size: 24px;
+    margin-top: -4px;
+  }
+  .header-nav .navbar-collapse {
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 15px 5px 25px;
+  }
+}
+
+.bg-img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.title-small {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.title-big {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 12px;
+}
+
+.about-left h5 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #403b3b;
+}
+
+.img-position {
+  position: absolute;
+  right: 0%;
+  top: -10%;
+  z-index: -1;
+  width: 470px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.img-border {
+  border-right: 4px solid #fff;
+  border-top: 4px solid #fff;
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1080px) {
+  .img-position {
+    width: 420px;
+  }
+}
+
+@media (max-width: 991px) {
+  .img-position {
+    width: 470px;
+  }
+}
+
+@media (max-width: 568px) {
+  .img-position {
+    right: 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-position {
+    right: 3%;
+    width: 85%;
+    height: 100%;
+  }
+  .img-border {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+.best-rooms {
+  background-color: var(--theme-light); }
+  .best-rooms h3.room-title a {
+    color: var(--heading-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: inline-block; }
+  .best-rooms h3.room-title a:hover {
+    color: #d63447; }
+  .best-rooms .maghny-grid {
+    position: relative;
+    list-style: none; }
+  .best-rooms .room-info {
+    padding: 30px 30px;
+    background: #fff;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .best-rooms .maghny-grid figure {
+    position: relative;
+    /*float: left;*/
+    overflow: hidden;
+    background: #020004;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+  .best-rooms .border-radius {
+    border-radius: 10px; }
+  .best-rooms .maghny-grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8; }
+  .best-rooms .maghny-grid figure figcaption {
+    padding: 2em;
+    padding-bottom: 0;
+    color: #fff;
+    text-transform: capitalize;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .best-rooms .maghny-grid figure figcaption::before,
+  .best-rooms .maghny-grid figure figcaption::after {
+    pointer-events: none; }
+  .best-rooms .maghny-grid figure figcaption,
+  .best-rooms .maghny-grid figure figcaption > a {
+    position: absolute;
+    top: inherit;
+    bottom: 27%;
+    left: 0;
+    width: 100%; }
+  .best-rooms .maghny-grid figure figcaption.w3set-hny {
+    position: absolute;
+    top: inherit;
+    bottom: 30%;
+    left: 0;
+    width: 100%; }
+  .best-rooms .maghny-grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0; }
+  .best-rooms .maghny-grid figure h4 {
+    transition: transform 0.35s;
+    font-size: 18px;
+    line-height: 28px; }
+  .best-rooms .maghny-grid figure h4.top-text {
+    font-size: 20px;
+    line-height: 28px; }
+  .best-rooms .maghny-grid figure h4 span {
+    font-weight: 700; }
+  .best-rooms .maghny-grid figure h4,
+  .best-rooms .maghny-grid figure p {
+    margin: 0;
+    color: #fff; }
+  .best-rooms .maghny-grid figure p {
+    color: #fff;
+    font-weight: 600; }
+  .best-rooms .maghny-grid a.author-name {
+    color: #fff; }
+  .best-rooms figure.effect-lily img {
+    opacity: 0.7;
+    transition: opacity 0.35s, transform 0.35s;
+    width: 100%; }
+  .best-rooms figure.effect-lily figcaption {
+    text-align: left; }
+  .best-rooms figure.effect-lily figcaption > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5em;
+    padding-bottom: 0;
+    width: 100%;
+    height: 50%; }
+  .best-rooms figure.effect-lily h4,
+  .best-rooms figure.effect-lily p,
+  .best-rooms figure.effect-lily a {
+    transform: translate3d(0, 40px, 0); }
+  .best-rooms figure.effect-lily h4 {
+    transition: transform 0.35s; }
+  .best-rooms figure.effect-lily p,
+  .best-rooms figure.effect-lily a {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.35s; }
+  .best-rooms figure.effect-lily:hover img,
+  .best-rooms figure.effect-lily:hover p,
+  .best-rooms figure.effect-lily:hover a {
+    opacity: .9; }
+  .best-rooms figure.effect-lily:hover h4,
+  .best-rooms figure.effect-lily:hover p,
+  .best-rooms figure.effect-lily:hover p {
+    transform: translate3d(0, 15px, 0); }
+  .best-rooms figure.effect-lily:hover p,
+  .best-rooms figure.effect-lily:hover a {
+    transition-delay: 0.05s;
+    transition-duration: 0.35s; }
+  .best-rooms .room-info ul li {
+    display: inline-block;
+    margin-right: 15px;
+    color: var(--para-color);
+    font-weight: 500; }
+  .best-rooms .room-info ul li span.fa {
+    color: #d1cebd;
+    width: 22px;
+    font-size: 16px; }
+  @media (max-width: 1160px) {
+    .best-rooms .maghny-grid figure figcaption,
+    .best-rooms .maghny-grid figure figcaption > a {
+      bottom: 34%; } }
+  @media (max-width: 1080px) {
+    .best-rooms .maghny-grid figure figcaption,
+    .best-rooms .maghny-grid figure figcaption > a {
+      bottom: 35%; }
+    .best-rooms .maghny-grid figure figcaption,
+    .best-rooms .maghny-grid figure figcaption > a {
+      bottom: 34%; } }
+  @media (max-width: 480px) {
+    .best-rooms .maghny-grid figure figcaption.w3set-hny {
+      bottom: 30%; } }
+  @media (max-width: 415px) {
+    .best-rooms figure.effect-lily figcaption > div {
+      padding: 1em; }
+    .best-rooms .maghny-gd-1 .maghny-gd-1.col-6 {
+      padding: 8px; }
+    .best-rooms .maghny-gd-1 .row {
+      padding: 0 10px; }
+    .best-rooms .maghny-grid figure figcaption.w3set-hny {
+      bottom: 40%; }
+    .best-rooms .room-info {
+      padding: 30px 20px; }
+    .best-rooms .maghny-grid figure figcaption,
+    .best-rooms .maghny-grid figure figcaption > a {
+      bottom: 50%; } }
+  @media (max-width: 380px) {
+    .best-rooms .maghny-gd-1 .maghny-gd-1.col-6 {
+      max-width: 100% !important;
+      flex: 0 0 100% !important; }
+    .best-rooms .maghny-grid figure figcaption.w3set-hny {
+      top: 30%; } }
+  @media (max-width: 370px) {
+    .best-rooms .maghny-grid figure figcaption.w3set-hny {
+      top: 25%; }
+    .best-rooms .maghny-grid figure h4.top-text {
+      font-size: 18px; } }
+/*# sourceMappingURL=Hompage.css.map */
