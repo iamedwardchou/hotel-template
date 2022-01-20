@@ -138,11 +138,6 @@ address {
 }
 
 ol,
-ul {
-  padding-left: 2rem;
-}
-
-ol,
 ul,
 dl {
   margin-top: 0;
@@ -6691,10 +6686,6 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul {
-  padding-left: 2rem;
-}
 
 ol,
 ul,

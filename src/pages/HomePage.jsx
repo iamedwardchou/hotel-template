@@ -1,13 +1,13 @@
 import React from 'react'
-import Nav from '../components/nav/Nav'
+import NavBar from '../components/nav/Nav'
 import Couresl from '../components/homepage/Crousel'
 import Footer from '../components/nav/Footer'
-import {Container, Row, Col, Button, Form, Card, Figure} from 'react-bootstrap';
+import {Container, Row, Col, Button, Form, Card} from 'react-bootstrap';
 import top from '../assets/top.jpg';
 import bottom from '../assets/bottom.jpg';
 import room1 from '../assets/room1.jpg';
-// import room2 from '../assets/room2.jpg';
-// import room3 from '../assets/room3.jpg';
+import room2 from '../assets/room2.jpg';
+import room3 from '../assets/room3.jpg';
 import styled from "styled-components";
 import './Hompage.css'
 
@@ -24,14 +24,14 @@ const FormSelect = styled(Form.Select)`
 
 const HomePage = () => {
     return (
-        <div>
-            <Nav/>
+        <>
+            <NavBar/>
             <Couresl/>
             <CheckForm/>
             <About/>
             <BestRoom/>
             <Footer/>
-        </div>
+        </>
     )
 }
 
@@ -118,19 +118,19 @@ const BestRoom = () =>{
     <section className="best-rooms bg-gray-light py-5">
         <Container className="py-lg-5 py-sm-4">
             <h3 className="title-big text-center">Best Rooms</h3>
-            <Row>
+            <Row className="d-flex align-items-center">
                 <Col lg={6}>
                     <Card calssName="maghny-grid">
-                        <Figure className="effect-lily">
-                            <Card.Img alt="" src={room1} />
-                            <Figure.Caption className="w3set-hny">
+                        {/* <Figure className="effect-lily"> */}
+                            <Card.Img variant="top" className="img-fluid" alt="" src={room1} />
+                            {/* <Figure.Caption className="w3set-hny"> 
                                 <div>
                                     <h4 class="top-text">Luxury Hotel and Best Resort
                                         <span>Peaceful Place to stay</span></h4>
                                     <p>From 20$ </p>
                                 </div>
                             </Figure.Caption>
-                        </Figure>
+                        </Figure> */}
                         
                         <Card.Body calssName="room-info">
                             <Card.Title>Luxury Hotel</Card.Title>
@@ -147,7 +147,13 @@ const BestRoom = () =>{
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className="mt-lg-0 mt-4">
+                    <div className="rooms d-flex flex-wrap">
+                        <img className="rounded mb-4 me-4" alt="" src={room2}/>
+                        <img className="rounded mb-4 me-4" alt="" src={room3}/>  
+                        <img className="rounded mb-4 me-4" alt="" src={room2}/>
+                        <img className="rounded mb-4 me-4" alt="" src={room3}/>  
+                    </div>
                 </Col>
             </Row>
         </Container>
