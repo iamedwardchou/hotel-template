@@ -49,13 +49,60 @@ const AboutUs = () =>{
             <div className="about-us-bg">
                 <div className="about-bg">
                     <div className="d-flex flex-column align-items-center filter">
-                        <h4 className="mb-md-5 mb-4">Doing the right thing, at the right time</h4>
-                        <Row>
-                            <Col md={6}>D</Col>
-                            <Col md={6}>u</Col>
-                            <Col md={6}>s</Col>
-                            <Col md={6}>t</Col>
-                        </Row>
+                        <Container>
+                            <h4 className="mb-md-5 mb-4">Doing the right thing, at the right time</h4>
+                            <Row>
+                                {/* 明天做描述 */}
+                                <Col md={6} calssName="">
+                                    <div className="about-feature">
+                                        <div className="icon">
+                                            <span className="fa fa-file-text-o" aria-hidden="true"></span>
+                                        </div>
+                                        <div className="icon-info">
+                                            <h5>Welcome Drink</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Unde pariatur saepe illum et aliquam. Consectetur ex earum ipsum modi eveniet.</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col md={6} className="">
+                                    <div className="about-feature">
+                                        <div className="icon">
+                                            <span className="fa fa-file-text-o" aria-hidden="true"></span>
+                                        </div>
+                                        <div className="icon-info">
+                                            <h5>Welcome Drink</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Unde pariatur saepe illum et aliquam. Consectetur ex earum ipsum modi eveniet.</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col md={6} className="mt-4">
+                                    <div className="about-feature">
+                                        <div className="icon">
+                                            <span className="fa fa-file-text-o" aria-hidden="true"></span>
+                                        </div>
+                                        <div className="icon-info">
+                                            <h5>Welcome Drink</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Unde pariatur saepe illum et aliquam. Consectetur ex earum ipsum modi eveniet.</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col md={6} className="mt-4">
+                                    <div className="about-feature">
+                                        <div className="icon">
+                                            <span className="fa fa-file-text-o" aria-hidden="true"></span>
+                                        </div>
+                                        <div className="icon-info">
+                                            <h5>Welcome Drink</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Unde pariatur saepe illum et aliquam. Consectetur ex earum ipsum modi eveniet.</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

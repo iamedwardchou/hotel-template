@@ -26,4 +26,15 @@
   top: 0;
   z-index: -1;
 }
+
+.about-us-bg div.about-bg div.filter div.about-feature {
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 4px;
+}
 /*# sourceMappingURL=About.css.map */
