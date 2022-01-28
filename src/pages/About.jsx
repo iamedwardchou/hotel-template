@@ -37,28 +37,27 @@ const AboutUs = () => {
           </Row>
           <ul className="d-flex mt-5">
             <li className="about-pic">
-              <img calssName="rounded" alt="" src={about1}></img>
+              <img className="rounded" alt="" src={about1}></img>
             </li>
             <li className="about-pic">
-              <img calssName="rounded" alt="" src={about2}></img>
+              <img className="rounded" alt="" src={about2}></img>
             </li>
             <li className="about-pic">
-              <img calssName="rounded" alt="" src={about3}></img>
+              <img className="rounded" alt="" src={about3}></img>
             </li>
           </ul>
         </Container>
       </section>
       <sectio className="about-us-2">
         <div className="about-us-bg">
-          <div className="about-bg">
-            <div className="d-flex flex-column align-items-center filter">
-              <Container>
+          <div className="about-bg filter d-flex flex-column align-items-center">
+            {/* <div className="d-flex flex-column align-items-center filter"> */}
+              <Container className="py-3">
                 <h4 className="mb-md-5 mb-4">
                   Doing the right thing, at the right time
                 </h4>
                 <Row>
-                  {/* 明天做描述 */}
-                  <Col md={6} calssName="">
+                  <Col md={6} className="mt-4">
                     <div className="about-feature">
                       <div className="icon">
                         <span
@@ -76,7 +75,7 @@ const AboutUs = () => {
                       </div>
                     </div>
                   </Col>
-                  <Col md={6} className="">
+                  <Col md={6} className="mt-4">
                     <div className="about-feature">
                       <div className="icon">
                         <span
@@ -132,7 +131,7 @@ const AboutUs = () => {
                   </Col>
                 </Row>
               </Container>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </sectio>

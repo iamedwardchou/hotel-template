@@ -18,21 +18,7 @@
   z-index: 0;
 }
 
-.about-us-bg div.about-bg div.filter {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  min-height: 90vh;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.about-us-bg div.about-bg div.filter div.about-feature {
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
+.about-us-bg div.about-bg div.about-feature {
   background: #fff;
   padding: 30px;
   border-radius: 4px;
